@@ -1,5 +1,8 @@
-* {
+*,
+*::after,
+*::before {
     background-color: aquamarine;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -9,20 +12,27 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: bisque;
+    padding: 8px 16px;
+    margin-top: 0px;
+    margin-bottom: 16px;
 }
 
 h2 {
     background-color: pink;
     font-size: 30px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
     color: black;
+    padding: 8px;
+    margin-bottom: 16px;
 }
 
 img {
     width: 500px;
     height: auto;
+    margin: 0px auto;
+    display: block;
 }
 
 a {
@@ -30,7 +40,11 @@ a {
     color: blueviolet;
     font-weight: 350;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
+    padding: 8px;
+    margin: 10px;
+    border: 2px dashed black;
+    text-align: center;
+    display: inline-block;
 }
 
 .special {
@@ -40,12 +54,18 @@ a {
 
 ul li {
     color: blueviolet;
+    margin-left: 8px;
+    padding: 5px;
+    font-size: 18px;
 }
 
 ol {
     background-color: aliceblue;
+    margin-left: 8px;
 }
 
 ol li {
+    padding: 5px;
     background-color: lightcoral;
+    font-size: 18px;
 }
